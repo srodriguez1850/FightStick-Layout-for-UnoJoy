@@ -23,3 +23,10 @@ FightStickv1.ino will allow you to quickly program your Arduino to an 11-button 
 11 - Start
 12 - Select
 ```
+*The following pins are read as digital.*
+```
+A1 - Up
+A2 - Down
+A3 - Left
+A4 - Right
+```
