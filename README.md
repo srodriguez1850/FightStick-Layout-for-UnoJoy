@@ -6,9 +6,8 @@ Have an Arduino? Check out UnoJoy! - *https://github.com/AlanChatham/UnoJoy*
 FightStickv1.ino will allow you to quickly program your Arduino to an 11-button (8 face buttons, 3 menu buttons) fightstick. Upload this code to your Arduino and test the output using UnoJoy's Processing Visualizer. Then reprogram the communications chip by going to DFU mode and you should have your fightstick all set!
 
 ### Pin Assignment for Buttons
+Connect the following pins to ground (GND) to register a button press.
 ```
-13 - Ground (GND)
-
 2 - Light Punch (LP/Jab)
 3 - Medium Punch (MP/Strong)
 4 - Heavy Punch (HP/Fierce)
@@ -23,7 +22,7 @@ FightStickv1.ino will allow you to quickly program your Arduino to an 11-button 
 11 - Start
 12 - Select
 ```
-*The following pins are read as digital.*
+The following pins are read as digital.
 ```
 A1 - Up
 A2 - Down
