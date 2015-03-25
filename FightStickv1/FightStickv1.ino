@@ -1,7 +1,7 @@
 /* Fight Stick v1
     Unojoy-based setup for 8-button arcade fighter (can also be used with whatever you'd like)
     
-    UnoJoy - Alan Chatham (2012)
+    Based on UnoJoy - Alan Chatham (2012)
     Syntax described for a 6-button + 2 macros fighter
 */
 
