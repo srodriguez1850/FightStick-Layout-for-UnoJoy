@@ -11,12 +11,12 @@
 // Use digital for 11 pushbuttons
 byte LightPunch = 2;
 byte MediumPunch = 3;
-byte HardPunch = 4;
+byte HeavyPunch = 4;
 byte MacroPunch = 5;
 
 byte LightKick = 6;
 byte MediumKick = 7;
-byte HardKick = 8;
+byte HeavyKick = 8;
 byte MacroKick = 9;
 
 byte Menu = 10;
@@ -30,8 +30,8 @@ byte Left = A3;
 byte Right = A4;
 
 // Define input array
-byte inputPinArray[] = {LightPunch, MediumPunch, HardPunch, MacroPunch,
-                        LightKick, MediumKick, HardKick, MacroKick,
+byte inputPinArray[] = {LightPunch, MediumPunch, HeavyPunch, MacroPunch,
+                        LightKick, MediumKick, HeavyKick, MacroKick,
                         Menu, Select, Start,
                         Up, Down, Left, Right};
 
@@ -76,8 +76,8 @@ dataForController_t getControllerData(void){
   // Have not tested in PS3, but if X1/X2 are switched, switch the pin assignments of the same letter.
   controllerData.l1On = !digitalRead(MacroKick);
   controllerData.l2On = !digitalRead(MacroPunch);
-  controllerData.r1On = !digitalRead(HardKick);
-  controllerData.r2On = !digitalRead(HardPunch);
+  controllerData.r1On = !digitalRead(HeavyKick);
+  controllerData.r2On = !digitalRead(HeavyPunch);
   
   controllerData.selectOn = !digitalRead(Select);
   controllerData.startOn = !digitalRead(Start);
