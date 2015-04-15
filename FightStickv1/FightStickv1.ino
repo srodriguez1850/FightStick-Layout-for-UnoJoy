@@ -54,6 +54,10 @@ void setupPins(void){
     pinMode(inputPinArray[i], INPUT);
     digitalWrite(inputPinArray[i], HIGH);
   }
+  
+  // Set up status LED
+  pinMode(13, OUTPUT);
+  digitalWrite(13, HIGH);
 }
 
 dataForController_t getControllerData(void){
